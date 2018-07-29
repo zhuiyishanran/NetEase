@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>不定宽+自适应</title>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	<style>
+		.left {
+			float: left;
+			margin-right: 20px;
+		}
+		.right {
+			overflow: hidden;
+		}
+	</style>
+	<div class="parent">
+		<div class="left">
+			<p>left</p>
+		</div>
+		<div class="right">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.parent1 {
+			display: table; width: 100%;
+		}
+		.left1,.right1 {
+			display: table-cell;
+		}
+		.left1 {
+			width: 0.1%;
+			padding-right: 20px;
+		}
+	</style>
+	<div class="parent1">
+		<div class="left1">
+			<p>left</p>
+		</div>
+		<div class="right1">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.parent2 {
+			display: flex;
+		}
+		.left2 {
+			margin-right: 20px;
+		}
+		.right2 {
+			flex: 1;
+		}
+	</style>
+	<div class="parent2">
+		<div class="left2">
+			<p>left</p>
+		</div>
+		<div class="right2">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+</body>
+</html>

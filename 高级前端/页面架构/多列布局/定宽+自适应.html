@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定宽+自适应</title>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	<style>
+		.left {
+			float: left;
+			width: 100px;
+		}
+		.right {
+			margin-left: 120px;
+		}
+	</style>
+	<div class="parent">
+		<div class="left">
+			<p>left</p>
+		</div>
+		<div class="right">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.left1 {
+			float: left;
+			width: 100px;
+			margin-right: 20px;
+		}
+		.right1 {
+			overflow: hidden;
+		}
+	</style>
+	<div class="parent1">
+		<div class="left1">
+			<p>left</p>
+		</div>
+		<div class="right1">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.parent2 {
+			display: table; width: 100%;
+			table-layout: fixed;
+		}
+		.left2, .right2 {
+			display: table-cell;
+		}
+		.left2 {
+			width: 100px;
+			padding-right: 20px;
+		}
+	</style>
+	<div class="parent2">
+		<div class="left2">
+			<p>left</p>
+		</div>
+		<div class="right2">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.parent3 {
+			display: flex;
+		}
+		.left3 {
+			width: 100px;
+			margin-right: 20px;
+		}
+		.right3 {
+			flex: 1;
+		}
+	</style>
+	<div class="parent3">
+		<div class="left3">
+			<p>left</p>
+		</div>
+		<div class="right3">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+</body>
+</html>

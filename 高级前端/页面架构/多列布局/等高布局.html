@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>等高布局</title>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+	<style>
+		.parent {
+			display: table; width: 100%;
+			table-layout: fixed;
+		}
+		.left, .right {
+			display: table-cell;
+			background: #999;
+		}
+		.left {
+			background: #666;
+			width: 100px;
+			border-right: 20px solid transparent;
+			background-clip: padding-box;
+		}
+	</style>
+	<div class="parent">
+		<div class="left">
+			<p>left</p>
+		</div>
+		<div class="right">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.parent1 {
+			display: flex;
+		}
+		.left1 {
+			background: #666;
+			width: 100px;
+			margin-right: 20px;
+		}
+		.right1 {
+			background: #999;
+			flex: 1;
+		}
+	</style>
+	<div class="parent1">
+		<div class="left1">
+			<p>left</p>
+		</div>
+		<div class="right1">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+	<br>
+	<style>
+		.left2 {
+			background: #666;
+			float: left;
+			width: 100px;
+			margin-right: 20px;
+		}
+		.right2 {
+			background: #999;
+			overflow: hidden;
+		}
+		.left2, .right2 {
+			padding-bottom: 9999px;
+			margin-bottom: -9999px;
+		}
+		.parent2 {
+			overflow: hidden;
+		}
+	</style>
+	<div class="parent2">
+		<div class="left2">
+			<p>left</p>
+		</div>
+		<div class="right2">
+			<p>right</p>
+			<p>right</p>
+		</div>
+	</div>
+</body>
+</html>
