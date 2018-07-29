@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>居中</title>
+</head>
+<body>
+	<style>
+		.parent {
+			background: #999;
+			height: 300px;
+			width: 500px;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.child {
+			background: #666;
+			display: inline-block;
+		}
+	</style>
+	<div class="parent">
+		<div class="child">table-cell</div>
+	</div>
+	<br>
+	<style>
+		.parent1 {
+			background: #999;
+			height: 300px;
+			width: 500px;
+			position: relative;
+		}
+		.child1 {
+			background: #666;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+	<div class="parent1">
+		<div class="child1">absolute</div>
+	</div>
+	<br>
+	<style>
+		.parent2 {
+			display: flex;
+			background: #999;
+			height: 300px;
+			width: 500px;
+			justify-content: center;
+			align-items: center;
+		}
+		.child2 {
+			background: #666;
+		}
+	</style>
+	<div class="parent2">
+		<div class="child2">flex</div>
+	</div>
+</body>
+</html>
