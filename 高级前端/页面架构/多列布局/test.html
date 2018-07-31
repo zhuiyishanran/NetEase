@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html * {
+			padding: 0;
+			margin: 0;
+		}
+		.img {
+			background: #abcdef;
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+			height: 300px;
+			background-image: url(https://easyread.ph.126.net/2fHIurYyW85iVeCgzcrgbA==/7916783886662535049.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.btn {
+			display: table-cell;
+			vertical-align: bottom;
+			text-align: center;
+		}
+		.btn-1,.btn-2,.btn-3 {
+			background: #000;
+			width: 10px;
+			height: 10px;
+			border:0.1px solid transparent;
+			border-radius: 50%;
+		}
+		.btn-2 {
+			margin: 0 5px;
+		}
+		.btn-1 {
+			background: #fff;
+		}
+		.img .btn .btn-2 :hover {
+			background-image: url(https://s314.siliconimg.com/kb/content_images/2018/03/06/1552277/1520302278_532.jpg);
+		}
+		.img .btn .btn-3 :hover {
+			background-image: url(https://www.gdaily.org/wp-content/uploads/2016/04/%E7%B6%B2%E6%98%93%E9%9B%B2%E9%9F%B3%E6%A8%82.png);
+		}
+	</style>
+</head>
+<body>
+	<div class="img">
+		<div class="btn">
+			<button class="btn-1"></button>
+			<button class="btn-2"></button>
+			<button class="btn-3"></button>
+		</div>
+	</div>
+</body>
+</html>

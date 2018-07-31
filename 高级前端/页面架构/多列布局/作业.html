@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<style>
+	<!--<style>
 		.parent {
 			display: flex;
 		}
@@ -21,7 +21,106 @@
 			width: 100px;
 			margin-left: 10px;
 		}
+	</style>-->
+	<style>
+		html * {
+			padding: 0;
+			margin: 0;
+		}
+		.left {
+			float: left;
+			width: 100px;
+			margin-right: 10px;
+			background: #666;
+		}
+		.right {
+			float: right;
+			width: 100px;
+			margin-left: 10px;
+			background: #bbb;
+		}
+		.center{
+			background: #999;
+			overflow: hidden;
+		}
 	</style>
+	<!--<style>
+		html * {
+			padding: 0;
+			margin: 0;
+		}
+		.parent {
+			position: relative;
+		}
+		.left {
+			position: absolute;
+			width: 100px;
+			left: 0;
+			background: #666;
+		}
+		.center {
+			position: absolute;
+			background: #999;
+			left: 110px;
+			right: 110px;
+		}
+		.right {
+			position: absolute;
+			width: 100px;
+			right: 0;
+			background: #bbb;
+		}
+	</style>-->
+	<!--<style>
+		html * {
+			padding: 0;
+			margin: 0;
+		}
+		.parent {
+			display: table;
+			width: 100%;
+		}
+		.left {
+			background: #666;
+			width: 100px;
+			display: table-cell;
+			border-right: 10px solid transparent;
+			background-clip: padding-box;
+		}
+		.center {
+			background: #999;
+			display: table-cell;
+		}
+		.right {
+			background: #bbb;
+			width: 100px;
+			display: table-cell;
+			border-left: 10px solid transparent;
+			background-clip: padding-box;
+		}
+	</style>-->
+	<!--<style>
+		html * {
+			padding: 0;
+			margin: 0;
+		}
+		.parent {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 100px auto 100px;
+		}
+		.left {
+			background:#666;
+			margin-right: 10px;
+		}
+		.center {
+			background: #999;
+		}
+		.right {
+			background: #bbb;
+			margin-left: 10px;
+		}
+	</style>-->
 </head>
 <body>
 	<div class="parent">
