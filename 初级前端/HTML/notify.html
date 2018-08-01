@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的第一个网页</title>
+	<script>
+		var title = '【收到6条新消息】';
+		var total = title.length + 1;
+		var index = -1;
+		setInterval(function() {
+			index = (index + 1)%total;
+			document.title = title.substring(index) + '我的第一个网页';
+		},500);
+	</script>
+</head>
+<body>
+	<h2>我的第一个网页</h2>
+</body>
+</html>

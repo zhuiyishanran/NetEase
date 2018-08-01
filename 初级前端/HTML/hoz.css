@@ -1,0 +1,12 @@
+main:after {
+	content: ' ';
+	clear: both;
+	display: block;
+}
+main aside {
+	float: left;
+	width: 150px;
+}
+main section {
+	margin-left: 150px;
+}
