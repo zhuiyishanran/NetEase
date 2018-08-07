@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 1px solid red;
+	box-shadow: 5px 5px 5px black,
+							inset -3px -5px 5px rgb(0,0,0,0.5),
+							inset 3px 5px 5px rgb(255,255,255,0.5);						
+	background-color: red;
+	border-radius: 8px;
+	color: red;
+	text-shadow: 1px 1px 1px black;
+}
