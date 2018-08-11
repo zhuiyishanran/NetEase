@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<style>
+	
+		form {
+			width: 250px;
+			height: 400px;
+		}
+		form label {
+			display: inline-block;
+			margin: 5px auto;
+			text-align: center;
+		}
+		input {
+			display: 
+		}
+	</style>
+</head>
+<body>
+	<h1>pizza预订表单</h1>
+	<form action="">
+		<label>name:<input type="text"></label>
+		<label>tel:<input type="text"></label>
+		<label>email:<input type="text"></label>
+		<fieldset>
+			<legend>pizza size</legend>
+			small<input type="radio">
+			middle<input type="radio">
+			big<input type="radio">
+		</fieldset>
+		<fieldset>
+			<legend>pizza ingredients</legend>
+				<label>cheese<input type="checkbox"></label>
+				<label>meat<input type="checkbox"></label>
+				<label>banana<input type="checkbox"></label>
+				<label>tomato<input type="checkbox"></label>
+		</fieldset>
+		<label for="">time:<input type="time" min='11:00' max='23:00' step='900'></label>
+		<label><button>submit</button></label>
+	</form>
+</body>
+</html>
